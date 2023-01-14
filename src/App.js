@@ -103,7 +103,7 @@ function App() {
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
     CONTRACT_ADDRESS: "0xf175F93EC2e6Be07Cb220C0BE02bB4dDE8F959CD",
-    SCAN_LINK: "https://explorer.cscscan.io/address/0xf175F93EC2e6Be07Cb220C0BE02bB4dDE8F959CD",
+    SCAN_LINK: "https://explorer.cscscan.io/address/0xf175F93EC2e6Be07Cb220C0BE02bB4dDE8F959CD/write-contract",
     NETWORK: {
       NAME: "Credit Smart Chain",
       SYMBOL: "CREDIT",

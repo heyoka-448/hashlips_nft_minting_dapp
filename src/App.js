@@ -4,6 +4,7 @@ import { connect } from "./redux/blockchain/blockchainActions";
 import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
+import { ethers } from "ethers";
 
 const truncate = (input, len) =>
   input.length > len ? `${input.substring(0, len)}...` : input;
@@ -112,7 +113,7 @@ function App() {
     NFT_NAME: "Punk Stars",
     SYMBOL: "STARS",
     MAX_SUPPLY: 10000,
-    WEI_COST: 10000000000000000000000,
+    WEI_COST: 10000,
     DISPLAY_COST: 10000,
     GAS_LIMIT: 285000,
     MARKETPLACE: "EnefSea",
@@ -121,7 +122,7 @@ function App() {
   });
 
   const claimNFTs = () => {
-    let cost = CONFIG.WEI_COST;
+    let cost = 10000;
     let gasLimit = CONFIG.GAS_LIMIT;
     let totalCostWei = String(cost * mintAmount);
     let totalGasLimit = String(gasLimit * mintAmount);
@@ -130,8 +131,8 @@ function App() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(blockchain.account, mintAmount)
-.send({ gasLimit: null, maxPriorityFeePerGas: null, maxFeePerGas: null, to: CONFIG.CONTRACT_ADDRESS, from: blockchain.account, value: totalCostWei, })
+      .mint(mintAmount)
+.send({ from: blockchain.account, value: ethers.utils.parseUnits(totalCostWei,18) })
       .once("error", (err) => {
         console.log(err);
         setFeedback("Sorry, something went wrong please try again later.");

@@ -103,8 +103,8 @@ function App() {
   const [feedback, setFeedback] = useState(`Click buy to mint your NFT.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
-    CONTRACT_ADDRESS: "0x09d424836cdd4EF122B83762738aB7DFde8C84F5",
-    SCAN_LINK: "https://explorer.cscscan.io/address/0x09d424836cdd4EF122B83762738aB7DFde8C84F5/",
+    CONTRACT_ADDRESS: "0xA68B593B91B806161240670055Af984E92A8ec0c",
+    SCAN_LINK: "https://explorer.cscscan.io/address/0xA68B593B91B806161240670055Af984E92A8ec0c/",
     NETWORK: {
       NAME: "Credit Smart Chain",
       SYMBOL: "CREDIT",

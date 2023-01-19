@@ -1,18 +1,18 @@
 {
-  "CONTRACT_ADDRESS": "0xf175F93EC2e6Be07Cb220C0BE02bB4dDE8F959CD",
-  "SCAN_LINK": "https://explorer.cscscan.io/address/0xf175F93EC2e6Be07Cb220C0BE02bB4dDE8F959CD/",
+  "CONTRACT_ADDRESS": "0x09d424836cdd4EF122B83762738aB7DFde8C84F5",
+  "SCAN_LINK": "https://explorer.cscscan.io/address/0x09d424836cdd4EF122B83762738aB7DFde8C84F5/",
   "NETWORK": {
     "NAME": "Credit Smart Chain",
     "SYMBOL": "CREDIT",
     "ID": 13308
   },
-  "NFT_NAME": "Punk Stars",
+  "NFT_NAME": "Credit Stars",
   "SYMBOL": "STARS",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 10000000000000000000000,
   "DISPLAY_COST": 10000,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "EnefSea",
-  "MARKETPLACE_LINK": "https://enefsea.com/punk-stars",
+  "MARKETPLACE_LINK": "https://enefsea.com/credit-stars",
   "SHOW_BACKGROUND": true
 }
